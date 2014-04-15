@@ -340,22 +340,88 @@ ul.auto-toc {
 <body>
 <div class="document" id="pronet-series-users-manual">
 <h1 class="title"><em>ProNet Series Users Manual</em>: Выдержки</h1>
-<h2 class="subtitle" id="safety-precautions">2 - Safety Precautions</h2>
 
 <!-- rst3: filename: ProNet_Series_Users_Manual_extracts.html -->
+<div class="section" id="safety-precautions">
+<h1>Safety Precautions</h1>
 <div class="section" id="keep-servo-drives-and-other-devices-separated-by-at-least-10mm">
-<h1>Keep servo drives and other devices separated by at least 10mm.</h1>
+<h2>Keep servo drives and other devices separated by at least 10mm.</h2>
 <p>The servo drive generates heat. Install the servo drive so that it can radiate heat freely. When installing servo drives with other devices in a control panel, provide at least 10mm space between them and 50mm space above and below them.</p>
 </div>
 <div class="section" id="perform-noise-reduction-and-grounding-properly">
-<h1>Perform noise reduction and grounding properly.</h1>
+<h2>Perform noise reduction and grounding properly.</h2>
 <ol class="arabic simple" start="4">
 <li>Never use a line filter for the power supply in the circuit. (Why ?)</li>
 </ol>
 </div>
 <div class="section" id="use-a-fast-response-type-ground-fault-interrupter">
-<h1>Use a fast-response type ground-fault interrupter.</h1>
+<h2>Use a fast-response type ground-fault interrupter.</h2>
 <p>For a ground-fault interrupter, always use a fast-response type or one designed for PWM inverters. Do not use a time-delay type.</p>
+</div>
+</div>
+<div class="section" id="chapter-1-checking-products-and-parts-names">
+<h1>Chapter 1: Checking Products and Parts Names</h1>
+<div class="section" id="checking-products-on-delivery">
+<h2>1.1 Checking Products on Delivery</h2>
+<div class="section" id="servomotor">
+<h3>1.1.1 Servomotor</h3>
+<p>Servomotor Model Designation: EMJ-04APB22:</p>
+<pre class="literal-block">
+- 04    - Rated Output: 0.4kW
+- A     - Voltage: 200V AC
+- P     - Encoder: Incremental Wire-saving Type 2500P/R
+- B     - Designing Sequence: Designing sequence
+- 2     - Shaft End: Straight with key and tap
+- 2     - Option Parts: With oil seal
+
+EMJ-04APB22 3000 r/min
+0.4 kW  1.27 N*m    IP65    Ins.F
+2.8 A   AC 200V, 3~ S1  200 Hz
+</pre>
+<p>Servomotor Model Designation: EMG-10APA22:</p>
+<pre class="literal-block">
+- 10    - Rated Output: 1.0kW
+- A     - Voltage: 200V AC
+- P     - Encoder: Incremental Wire-saving Type 2500P/R
+- A     - Designing Sequence: Designing sequence
+- 2     - Shaft End: Straight with key and tap
+- 2     - Option Parts: With oil seal
+
+EMG-10APA22 2000 r/min
+1.0 kW  4.78 N*m    IP65    Ins.F
+6.0 A   AC 200V, 3~ S1  133 Hz
+</pre>
+<div class="admonition-brakes admonition">
+<p class="first admonition-title">Brakes</p>
+<p class="last">There is no brake in EMG ...DA... servomotor.</p>
+</div>
+</div>
+<div class="section" id="servo-drive">
+<h3>1.1.2 Servo drive</h3>
+<p>ProNet-E Servo drive Model Designation: PRONET-E-04A:</p>
+<pre class="literal-block">
+- 04    - Rated Output: 0.4kW
+- A     - Voltage: 200V AC
+</pre>
+<p>ProNet-E Servo drive Model Designation: PRONET-E-08A:</p>
+<pre class="literal-block">
+- 08    - Rated Output: 0.75kW
+- A     - Voltage: 200V AC
+</pre>
+<p>ProNet-E Servo drive Model Designation: PRONET-E-10A:</p>
+<pre class="literal-block">
+- 10    - Rated Output: 1.0kW
+- A     - Voltage: 200V AC
+</pre>
+<div class="admonition-note admonition">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>ProNet-E is only equipped with wire-saving incremental encoder(2500 P/R).</li>
+<li>ProNet-E does not support extended module.</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 </div>
 </body>
