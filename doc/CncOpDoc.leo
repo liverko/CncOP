@@ -24,7 +24,16 @@
 <v t="alekosun.20140415142304.1585"><vh>1.1.2 Servo drive</vh></v>
 </v>
 </v>
-<v t="alekosun.20140415153635.1592"><vh>Chapter 3: Wiring</vh></v>
+<v t="alekosun.20140415153635.1592" a="E"><vh>Chapter 3: Wiring</vh>
+<v t="alekosun.20140416130411.1594"><vh>3.1 Main Circuit Wiring</vh></v>
+</v>
+<v t="alekosun.20140421093647.8712" a="E"><vh>Chapter 4: Operation</vh>
+<v t="alekosun.20140421093647.8713"><vh>4.1 Trial Operation</vh></v>
+<v t="alekosun.20140421093647.8714"><vh>4.9 Limiting Torque</vh>
+<v t="alekosun.20140421093647.8715"><vh>4.9.2 External Torque Limit</vh></v>
+</v>
+<v t="alekosun.20140421093647.8716"><vh>4.12 Online Autotuning</vh></v>
+</v>
 </v>
 </v>
 <v t="alekosun.20140408133410.1713" a="E"><vh>@url file://UsefulLinks.html</vh>
@@ -147,5 +156,15 @@ ProNet-E Servo drive Model Designation: PRONET-E-10A::
 **ProNet AC Servo Drive** - http://www.estun.com/en/product/ac-servo-system-motion-control-system/servo-drives/pronet-ac-servo-drive.html
 </t>
 <t tx="alekosun.20140415153635.1592"></t>
+<t tx="alekosun.20140416130411.1594">.. admonition:: Caution
+
+    - Keep power and signal lines separated by at least 300 mm.</t>
+<t tx="alekosun.20140421093647.8712"></t>
+<t tx="alekosun.20140421093647.8713">- ... the standard parameters for *speed control mode* (*factory* settings)
+- нам нужен *position control mode* ? 
+</t>
+<t tx="alekosun.20140421093647.8714"></t>
+<t tx="alekosun.20140421093647.8715">This function allows the torque to be limited at specific times during machine operation, for example, during press stops and hold operations for robot workpieces.</t>
+<t tx="alekosun.20140421093647.8716"></t>
 </tnodes>
 </leo_file>
