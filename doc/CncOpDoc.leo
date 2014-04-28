@@ -10,10 +10,18 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
+<v t="alekosun.20140428124351.1661"><vh>Unicode options</vh>
+<v t="alekosun.20140428124351.1662"><vh>@string default_at_auto_file_encoding = utf-8</vh></v>
+<v t="alekosun.20140428124351.1663"><vh>@string default_derived_file_encoding = utf-8</vh></v>
+<v t="alekosun.20140428124351.1664" a="E"><vh>derived files options</vh>
+<v t="alekosun.20140428124351.1665"><vh>@string output_newline = crlf</vh></v>
+</v>
+</v>
 <v t="alekosun.20140408133410.1712" a="E"><vh>doc</vh>
 <v t="alekosun.20140424092955.8675" a="E"><vh>file://LinuxCNC_problems.html</vh>
 <v t="alekosun.20140424092955.8676" a="E"><vh>@rst LinuxCNC_problems.html</vh>
 <v t="alekosun.20140424092955.8674"><vh>Limit switches</vh></v>
+<v t="alekosun.20140424092955.8786"><vh>Home Switch Location</vh></v>
 </v>
 </v>
 <v t="alekosun.20140414152235.1570" a="E"><vh>@url file://ProNet_Series_Users_Manual_extracts.html</vh>
@@ -41,7 +49,7 @@
 </v>
 </v>
 </v>
-<v t="alekosun.20140408133410.1713"><vh>@url file://UsefulLinks.html</vh>
+<v t="alekosun.20140408133410.1713" a="E"><vh>@url file://UsefulLinks.html</vh>
 <v t="alekosun.20140408133410.1714" a="E"><vh>@rst UsefulLinks.html</vh>
 <v t="alekosun.20140415142304.1589"><vh>ESTUN Automation</vh></v>
 </v>
@@ -214,5 +222,21 @@ write_intermediate_file=True
 *LinuxCNC*: Проблемы
 #########################################
 </t>
+<t tx="alekosun.20140424092955.8786">Положение концевика начального положения. 
+
+Если у Вас совмещены home switch и limit switch в одном концевике, то значение home location не должно быть равным home switch location иначе появится ошибка "joint limit error", т.е. станок не должен остановиться в точке срабатывания ограничительного концевика. 
+</t>
+<t tx="alekosun.20140428124351.1661"></t>
+<t tx="alekosun.20140428124351.1662"></t>
+<t tx="alekosun.20140428124351.1663"></t>
+<t tx="alekosun.20140428124351.1664"></t>
+<t tx="alekosun.20140428124351.1665">nl or lf: (recommended) All lines end with "\n"
+cr:       All lines end with "\r"
+crlf:     All lines end with "\r\n"
+platform: Lines end in platform-specific way.
+
+With platform Leo opens output files in "w" mode rather than "wb" mode and writes '\n'
+
+Please specify nl when uploading files to Leo's CVS site.</t>
 </tnodes>
 </leo_file>

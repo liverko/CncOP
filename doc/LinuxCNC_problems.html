@@ -340,9 +340,10 @@ ul.auto-toc {
 <body>
 <div class="document" id="linuxcnc">
 <h1 class="title"><em>LinuxCNC</em>: Проблемы</h1>
-<h2 class="subtitle" id="limit-switches">Limit switches</h2>
 
 <!-- rst3: filename: LinuxCNC_problems.html -->
+<div class="section" id="limit-switches">
+<h1>Limit switches</h1>
 <p><em>I get this error and have no idea why. I thought joint 0 would be &quot;X&quot;, but it doesn't seem to be. I get no indication that X or any other axis has hit a limit. I am checking this several ways:</em>
 <em>No arrow pointing to an axis in the display window</em>
 <em>no signal on any home/limit switches in hal config - watch</em></p>
@@ -360,6 +361,12 @@ any lines that connect inputs to &quot;axis.0.neg-lim-sw-in&quot; and &quot;axis
 to EMC for limit switch sensing.</p>
 <p>If you DO have limit switches, then there may be a problem in pull-up resistors or some similar scheme to
 establish correct logic levels when the switch is in the &quot;OK&quot; position.</p>
+</div>
+<div class="section" id="home-switch-location">
+<h1>Home Switch Location</h1>
+<p>Положение концевика начального положения.</p>
+<p>Если у Вас совмещены home switch и limit switch в одном концевике, то значение home location не должно быть равным home switch location иначе появится ошибка &quot;joint limit error&quot;, т.е. станок не должен остановиться в точке срабатывания ограничительного концевика.</p>
+</div>
 </div>
 </body>
 </html>
